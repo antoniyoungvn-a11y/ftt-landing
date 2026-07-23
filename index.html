@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>越南房地產投資免費諮詢登記｜FTT 越南房地產</title>
+<meta name="description" content="年租金報酬 6–8%，USD 8 萬起投資胡志明市／河內。外國人合法持有 50 年產權，台灣顧問全程中文服務，代租代管一條龍。立即登記免費一對一諮詢。">
+<style>
+  :root{
+    --green:#0B3D2E; --green-2:#0F5540; --gold:#D9A72E; --gold-2:#F2C94C;
+    --ink:#1C2B26; --muted:#5C6F68; --bg:#F7F5EF; --white:#FFFFFF;
+    --radius:14px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;color:var(--ink);background:var(--bg);line-height:1.7}
+  img{max-width:100%}
+  a{text-decoration:none;color:inherit}
+  .wrap{max-width:680px;margin:0 auto;padding:0 20px}
+
+  /* header */
+  header{position:sticky;top:0;z-index:50;background:var(--green);color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;max-width:680px;margin:0 auto}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.5px}
+  .logo .mark{width:38px;height:38px;border-radius:9px;background:linear-gradient(135deg,var(--gold),var(--gold-2));color:var(--green);display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:900}
+  .logo small{display:block;font-weight:500;font-size:11px;opacity:.85;letter-spacing:2px}
+  .nav-cta{background:var(--gold);color:var(--green);font-weight:800;padding:9px 16px;border-radius:999px;font-size:14px}
+
+  /* hero */
+  .hero{background:linear-gradient(160deg,var(--green) 0%,var(--green-2) 70%,#14684E 100%);color:#fff;padding:44px 0 54px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-90px;top:-90px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(242,201,76,.28),transparent 70%)}
+  .eyebrow{display:inline-block;background:rgba(242,201,76,.16);border:1px solid rgba(242,201,76,.55);color:var(--gold-2);font-size:13px;font-weight:700;padding:6px 14px;border-radius:999px;margin-bottom:18px;letter-spacing:1px}
+  h1{font-size:clamp(28px,6.5vw,40px);line-height:1.35;font-weight:900;margin-bottom:14px}
+  h1 .hl{color:var(--gold-2)}
+  .hero p.sub{font-size:16px;opacity:.92;margin-bottom:26px}
+  .stats{display:flex;gap:10px;margin:26px 0 30px;flex-wrap:wrap}
+  .stat{flex:1;min-width:96px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:var(--radius);padding:12px 8px;text-align:center}
+  .stat b{display:block;font-size:22px;color:var(--gold-2)}
+  .stat span{font-size:12px;opacity:.85}
+  .btn{display:block;text-align:center;font-weight:900;font-size:18px;padding:16px 22px;border-radius:999px;transition:transform .15s}
+  .btn:active{transform:scale(.97)}
+  .btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:var(--green);box-shadow:0 6px 20px rgba(217,167,46,.45)}
+  .btn-line{background:#06C755;color:#fff;margin-top:12px;font-size:16px}
+  .hero .note{text-align:center;font-size:12.5px;opacity:.8;margin-top:12px}
+
+  /* sections */
+  section{padding:46px 0}
+  .sec-title{font-size:24px;font-weight:900;text-align:center;margin-bottom:8px}
+  .sec-title em{font-style:normal;color:var(--green-2);border-bottom:4px solid var(--gold-2)}
+  .sec-sub{text-align:center;color:var(--muted);font-size:14.5px;margin-bottom:28px}
+
+  /* pain */
+  .compare{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .cmp{border-radius:var(--radius);padding:18px 14px;background:var(--white);box-shadow:0 3px 14px rgba(0,0,0,.06)}
+  .cmp h3{font-size:15px;margin-bottom:10px}
+  .cmp.bad h3{color:#9A3B3B}.cmp.good{border:2px solid var(--gold);background:#FFFDF4}.cmp.good h3{color:var(--green-2)}
+  .cmp ul{list-style:none;font-size:13.5px;color:var(--muted)}
+  .cmp li{padding:5px 0 5px 22px;position:relative}
+  .cmp.bad li::before{content:"✕";position:absolute;left:0;color:#C25B5B;font-weight:900}
+  .cmp.good li::before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:900}
+  .cmp .big{font-size:26px;font-weight:900;color:inherit}
+  .cmp.bad .big{color:#9A3B3B}.cmp.good .big{color:var(--green-2)}
+
+  /* benefits */
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .card{background:var(--white);border-radius:var(--radius);padding:20px 16px;box-shadow:0 3px 14px rgba(0,0,0,.06)}
+  .card .ico{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--green),var(--green-2));color:var(--gold-2);display:flex;align-items:center;justify-content:center;font-size:21px;margin-bottom:12px}
+  .card h3{font-size:16px;margin-bottom:6px;color:var(--green)}
+  .card p{font-size:13px;color:var(--muted)}
+
+  /* gains */
+  .gain{background:var(--white);border-radius:var(--radius);box-shadow:0 3px 14px rgba(0,0,0,.06);padding:6px 20px;margin-bottom:12px;display:flex;gap:14px;align-items:center}
+  .gain .n{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:var(--gold-2);color:var(--green);font-weight:900;display:flex;align-items:center;justify-content:center}
+  .gain div{padding:14px 0}
+  .gain h3{font-size:15.5px;color:var(--green)}
+  .gain p{font-size:13px;color:var(--muted)}
+
+  /* steps */
+  .steps{counter-reset:s}
+  .step{position:relative;padding:0 0 26px 54px}
+  .step::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:0;width:38px;height:38px;border-radius:50%;background:var(--green);color:var(--gold-2);font-weight:900;display:flex;align-items:center;justify-content:center;font-size:17px}
+  .step::after{content:"";position:absolute;left:18px;top:42px;bottom:4px;width:2px;background:#D8D2C2}
+  .step:last-child::after{display:none}
+  .step h3{font-size:16px;margin-bottom:4px}
+  .step p{font-size:13.5px;color:var(--muted)}
+
+  /* form */
+  .form-sec{background:linear-gradient(160deg,var(--green),var(--green-2));color:#fff}
+  .form-card{background:var(--white);color:var(--ink);border-radius:18px;padding:26px 20px;box-shadow:0 10px 40px rgba(0,0,0,.3)}
+  .form-card h3{text-align:center;font-size:20px;color:var(--green);margin-bottom:4px}
+  .form-card .fc-sub{text-align:center;font-size:13px;color:var(--muted);margin-bottom:20px}
+  label{display:block;font-size:13.5px;font-weight:700;margin:14px 0 6px}
+  label .req{color:#C0392B}
+  input,select,textarea{width:100%;padding:13px 14px;border:1.5px solid #D8D2C2;border-radius:10px;font-size:15px;font-family:inherit;background:#FCFBF7}
+  input:focus,select:focus,textarea:focus{outline:none;border-color:var(--gold)}
+  .submit{width:100%;border:none;cursor:pointer;margin-top:22px}
+  .form-note{font-size:12px;color:var(--muted);text-align:center;margin-top:12px}
+  .success{display:none;text-align:center;padding:30px 10px}
+  .success .big-ok{font-size:52px}
+  .success h3{color:var(--green);margin:10px 0 6px}
+  .success p{font-size:14px;color:var(--muted)}
+
+  /* contact */
+  .contact{text-align:center}
+  .qr{width:150px;height:150px;border-radius:14px;border:4px solid var(--gold-2);margin:16px auto}
+  .contact .id{font-size:20px;font-weight:900;color:var(--green)}
+  .tels{display:flex;gap:12px;justify-content:center;margin-top:16px;flex-wrap:wrap}
+  .tel{background:var(--white);border:1.5px solid var(--green);color:var(--green);font-weight:700;padding:10px 18px;border-radius:999px;font-size:14px}
+
+  footer{background:var(--green);color:rgba(255,255,255,.75);font-size:12px;text-align:center;padding:26px 20px;line-height:1.9}
+  footer b{color:var(--gold-2)}
+
+  /* floating LINE */
+  .float-line{position:fixed;right:16px;bottom:18px;z-index:60;background:#06C755;color:#fff;font-weight:800;padding:13px 20px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.3);font-size:15px;display:flex;align-items:center;gap:8px}
+
+  @media (max-width:420px){
+    .compare,.cards{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">
+      <div class="mark">FTT</div>
+      <div>FTT 越南房地產<small>VIETNAM PROPERTY</small></div>
+    </div>
+    <a class="nav-cta" href="#register">免費諮詢</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap">
+    <span class="eyebrow">台灣顧問全程中文服務｜胡志明市・河內</span>
+    <h1>年租金報酬 <span class="hl">6–8%</span>，<br>USD 8 萬起<br>當越南包租公</h1>
+    <p class="sub">外國人<b>合法持有 50 年產權</b>，代租代管一條龍。不會越文、沒去過越南，也能安心置產、每月收租。</p>
+    <div class="stats">
+      <div class="stat"><b>6–8%</b><span>年租金報酬</span></div>
+      <div class="stat"><b>USD 8萬</b><span>起投門檻</span></div>
+      <div class="stat"><b>678+</b><span>台灣客戶服務</span></div>
+    </div>
+    <a class="btn btn-gold" href="#register">立即登記 免費 1 對 1 諮詢 →</a>
+    <a class="btn btn-line" href="https://line.me/ti/p/~DENNY88881">加 LINE 直接問：DENNY88881</a>
+    <p class="note">登記完全免費，30 秒完成，專人 24 小時內回覆</p>
+  </div>
+</div>
+
+<!-- PAIN / COMPARE -->
+<section>
+  <div class="wrap">
+    <h2 class="sec-title">還在台灣領 <em>2% 租金報酬</em>？</h2>
+    <p class="sec-sub">同樣一筆錢，放在不同市場，結果差很大</p>
+    <div class="compare">
+      <div class="cmp bad">
+        <h3>🇹🇼 台北買房收租</h3>
+        <p class="big">~2%</p>
+        <ul>
+          <li>總價動輒 2,000 萬台幣起</li>
+          <li>租金報酬率長年墊底</li>
+          <li>房價基期已高，增值空間有限</li>
+        </ul>
+      </div>
+      <div class="cmp good">
+        <h3>🇻🇳 胡志明市買房收租</h3>
+        <p class="big">6–8%</p>
+        <ul>
+          <li>USD 8 萬（約 260 萬台幣）起</li>
+          <li>GDP 年增約 7%，人口紅利強勁</li>
+          <li>外資湧入，租客以外籍幹部為主</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section style="background:#EFEBE0">
+  <div class="wrap">
+    <h2 class="sec-title">為什麼台灣人選 <em>FTT</em></h2>
+    <p class="sec-sub">從看房、買房到收租，全程有人幫你顧</p>
+    <div class="cards">
+      <div class="card"><div class="ico">🏛️</div><h3>合法持有 50 年</h3><p>依越南住宅法，外國人可合法購買並持有公寓 50 年產權，流程全透明。</p></div>
+      <div class="card"><div class="ico">🗣️</div><h3>台灣顧問全程中文</h3><p>從諮詢、看房到簽約，台灣顧問全程陪同，合約中越雙語對照。</p></div>
+      <div class="card"><div class="ico">🔑</div><h3>代租代管一條龍</h3><p>幫你找租客、收租金、處理維修，人在台灣照樣每月收租。</p></div>
+      <div class="card"><div class="ico">✈️</div><h3>看房團定期出發</h3><p>台北直飛胡志明市 3.5 小時，實地帶看熱門建案，不簽約也沒關係。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU GET -->
+<section>
+  <div class="wrap">
+    <h2 class="sec-title">登記後你會<em>免費獲得</em></h2>
+    <p class="sec-sub">一對一提供，不是罐頭資料</p>
+    <div class="gain"><div class="n">1</div><div><h3>越南市場投資簡報</h3><p>胡志明市＋河內最新行情、熱門區域、外國人購屋規定一次看懂。</p></div></div>
+    <div class="gain"><div class="n">2</div><div><h3>專屬物件投資分析</h3><p>依你的預算試算：租金報酬、持有成本、代管費用、淨報酬率。</p></div></div>
+    <div class="gain"><div class="n">3</div><div><h3>法規與稅費解說</h3><p>產權年限、匯款進出、租金匯回台灣，最容易踩的坑先幫你排掉。</p></div></div>
+    <div class="gain"><div class="n">4</div><div><h3>看房團優先保留名額</h3><p>每月看房團名額有限，登記者優先通知、優先保留。</p></div></div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section style="background:#EFEBE0">
+  <div class="wrap">
+    <h2 class="sec-title">只要 <em>4 步驟</em>，輕鬆開始</h2>
+    <p class="sec-sub">全程免費評估，喜歡再進場</p>
+    <div class="steps">
+      <div class="step"><h3>填寫下方表單（30 秒）</h3><p>留下姓名與聯絡方式，選擇你感興趣的服務。</p></div>
+      <div class="step"><h3>顧問 LINE 與你聯繫</h3><p>24 小時內專人回覆，了解你的預算與需求。</p></div>
+      <div class="step"><h3>收到專屬投資分析</h3><p>依你的條件挑物件、算報酬，線上講解一次搞懂。</p></div>
+      <div class="step"><h3>安排看房或線上說明會</h3><p>想飛一趟就跟團實地看，不方便出國就先線上了解。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="form-sec" id="register">
+  <div class="wrap">
+    <h2 class="sec-title" style="color:#fff">免費諮詢<em style="color:var(--gold-2);border-color:var(--gold-2)">登記表</em></h2>
+    <p class="sec-sub" style="color:rgba(255,255,255,.85)">每月免費一對一諮詢名額有限，額滿需排下月</p>
+    <div class="form-card">
+      <form id="regForm">
+        <h3>立即登記，24 小時內回覆</h3>
+        <p class="fc-sub">資料僅用於諮詢聯繫，絕不外流</p>
+        <label>姓名 / 稱呼 <span class="req">＊</span></label>
+        <input type="text" name="姓名" required placeholder="例：陳先生">
+        <label>手機號碼 <span class="req">＊</span></label>
+        <input type="tel" name="手機" required placeholder="例：0912345678">
+        <label>LINE ID（方便的話）</label>
+        <input type="text" name="LINE_ID" placeholder="方便顧問加你 LINE">
+        <label>預算範圍</label>
+        <select name="預算">
+          <option>還在評估</option>
+          <option>USD 8–15 萬</option>
+          <option>USD 15–30 萬</option>
+          <option>USD 30 萬以上</option>
+        </select>
+        <label>感興趣的服務</label>
+        <select name="感興趣">
+          <option>免費 1 對 1 諮詢</option>
+          <option>線上說明會</option>
+          <option>越南看房團</option>
+          <option>代租代管服務</option>
+        </select>
+        <label>想了解的問題（選填）</label>
+        <textarea name="問題" rows="3" placeholder="例：外國人買房流程？租金怎麼匯回台灣？"></textarea>
+        <button class="btn btn-gold submit" type="submit">送出登記，領取免費投資分析 →</button>
+        <p class="form-note">送出即表示同意由 FTT 顧問與你聯繫</p>
+      </form>
+      <div class="success" id="success">
+        <div class="big-ok">🎉</div>
+        <h3>登記成功！</h3>
+        <p>顧問將於 24 小時內與你聯繫。<br>想更快開始？直接加 LINE：<b>DENNY88881</b></p>
+        <a class="btn btn-line" style="margin-top:18px" href="https://line.me/ti/p/~DENNY88881">立即加 LINE 諮詢</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <div class="wrap">
+    <h2 class="sec-title">或直接<em>掃碼加 LINE</em></h2>
+    <img class="qr" alt="LINE QR Code" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAAEIAQAAAACLjVdSAAABj0lEQVR4nO2YwW7DMAxDH4v8/y9zB8my0ctOU4W5aYGmDg80ocgUZX65Xr8Bvoh/jHhAcWeQ4ysfq1OYtumBAQSyQDikWKtTmPbpgfbuMSFKrU5h+hGEkZzqfJLHCIQx4DdBJjL9O8QDa/fK32ispckUpj0IvErBb5/1eArTtvqorSvrQ9Vg+3gMQgiEhJCMBU5NenmMQaTrsE2WhnPxPv8RlhTClcocjgzwHKat/UM4bHqdMunM5jBtq4+qiDxoSxZZ180vIUAMcFkg26o38piCwMbe9ssm/qcFuc1/vMBS7N4GyTnWOVcHMW1AVOSxR9yjq+o6PbC93hkTr09Kk+tTmPb5U2vP+evVIUpnFtMGxBOdUzXWpU/flmwK08b+sQLCMB07O9V9+Zh83lY3DW+m+/LkFyiunGwF5Dx343l75OuyHCY17ZkaeUxBHPl6BKeZru95ZgrTdoSALJAsGd3nxw5EzXFCa6a5Lg868vUICaNAwqNd6Ncfym6slqHlTOMsnsK03X98lMcXMRPxA+73yePiKfEXAAAAAElFTkSuQmCC">
+    <p class="id">LINE / WECHAT：DENNY88881</p>
+    <div class="tels">
+      <a class="tel" href="tel:+886956918888">🇹🇼 台灣 0956-918-888</a>
+      <a class="tel" href="tel:+84899166037">🇻🇳 越南 0899-166-037</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <b>FTT 越南房地產投資顧問</b><br>
+  台灣台北｜胡志明市・河內雙市場服務<br>
+  LINE / WECHAT：DENNY88881｜Email：antoniyoungvn@gmail.com<br><br>
+  投資一定有風險，過往報酬不代表未來績效。本頁所載報酬率為市場預估值，實際數字依個別物件與市況而定。<br>
+  © 2026 FTT Vietnam Property. All rights reserved.
+</footer>
+
+<a class="float-line" href="https://line.me/ti/p/~DENNY88881">💬 LINE 諮詢</a>
+
+<script>
+document.getElementById('regForm').addEventListener('submit', async function(e){
+  e.preventDefault();
+  var form = e.target;
+  var btn = form.querySelector('.submit');
+  btn.disabled = true; btn.textContent = '送出中…';
+  var data = Object.fromEntries(new FormData(form).entries());
+  data._subject = '【官網報名】' + data['姓名'] + ' - ' + data['感興趣'];
+  data._captcha = 'false';
+  try{
+    var res = await fetch('https://formsubmit.co/ajax/antoniyoungvn@gmail.com', {
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body: JSON.stringify(data)
+    });
+    if(!res.ok) throw new Error('bad status');
+    form.style.display = 'none';
+    document.getElementById('success').style.display = 'block';
+  }catch(err){
+    btn.disabled = false; btn.textContent = '送出登記，領取免費投資分析 →';
+    alert('送出失敗，請直接加 LINE：DENNY88881 或來電 0956-918-888');
+  }
+});
+</script>
+</body>
+</html>
