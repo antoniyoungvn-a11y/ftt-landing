@@ -1,4 +1,7 @@
-name: Deploy to GitHub Pages
+name: Sync main to gh-pages
+
+# GitHub Pages 的來源是 gh-pages 分支（分支部署模式）。
+# 這個 workflow 在每次 push main 後，把 main 內容同步到 gh-pages，觸發 Pages 重建。
 
 on:
   push:
@@ -6,27 +9,15 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: pages
+  group: pages-sync
   cancel-in-progress: true
 
 jobs:
-  deploy:
+  sync:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
-        with:
-          enablement: true
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - run: git push origin HEAD:gh-pages --force
